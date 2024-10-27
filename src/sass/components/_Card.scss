@@ -1,0 +1,26 @@
+.cardContainer {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin: 45px 100px;
+  height: 829px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  row-gap: 70px;
+  padding: 56px 50px;
+}
+
+.cardBox {
+  height: 340px;
+  width: 340px;
+  background-color: #FF6060;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  h2 {
+    color: #FFF;
+    font-size: 18px;
+    margin: 20px;
+  }
+}

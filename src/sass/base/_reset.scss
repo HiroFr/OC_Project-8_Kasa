@@ -1,0 +1,72 @@
+/* Reset CSS */
+
+@use './typography' as typography;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: typography.$font_family;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
