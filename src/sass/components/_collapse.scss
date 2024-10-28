@@ -1,0 +1,27 @@
+.collapseContainer {
+  margin-bottom: 45px;
+  width: 100%;
+  
+  .collapse {
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+
+  h2 {
+    color: #FFF;
+    font-size: 24px;
+    padding: 10px 0px 10px 10px;
+  }
+}
+
+.collapseContain {
+  background-color: #F6F6F673;
+
+   p {
+    font-size: 18px;
+   }
+}
+}
+
+

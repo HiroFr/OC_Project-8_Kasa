@@ -5,8 +5,11 @@
 
 @use './components/_navBar';
 @use './components/_banner';
-@use './components/_Card';
+@use './components/_card';
+@use './components/_collapse';
+@use './components/_tags';
 @use './components/_footer';
 
 @use './pages/_home';
 @use './pages/_notFound';
+@use './pages/_housingLayout';
