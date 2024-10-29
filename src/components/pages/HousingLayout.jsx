@@ -2,6 +2,8 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 import Collapse from '../Collapse';
 import Tag from '../Tag';
+import Carousel from '../Carousel';
+import Profile from '../Profile';
 import CardListJson from '../../data.json';
 import { useParams } from 'react-router-dom';
 
@@ -13,15 +15,20 @@ function HousingLayout() {
   return ( 
     <>
       <NavBar />
-      <h1>{cardData.title}</h1>
-      <h2>{cardData.location}</h2>
-      <h2>{cardData.host.name}</h2>
-      <img src={cardData.host.picture} alt={cardData.host.name} />
+      <Carousel />
+      <div className="headerLayout">
+        <div className="titleLocation">
+          <h1>{cardData.title}</h1>
+          <h2>{cardData.location}</h2>
+        </div>
+        <Profile hostname={cardData.host.name} hostpicture={cardData.host.picture}/>
+      </div>
       <div className="tagsLayout">
         {cardData.tags.map((tagsTitle, index) => (
           <Tag key={index} tagsTitle={tagsTitle}/>
-        ))}        
+        ))}
       </div>
+      <h1>{cardData.rating}</h1>
       <div className="collapseContent">
         <Collapse title="Description" content={cardData.description}/>
         <Collapse title="Équipements" content={

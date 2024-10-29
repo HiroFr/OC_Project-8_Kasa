@@ -1,0 +1,11 @@
+.carousel {
+  margin: 0px 100px;
+  margin-bottom: 30px;
+
+  .carouselPicture {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+}

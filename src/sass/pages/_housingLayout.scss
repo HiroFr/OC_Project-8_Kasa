@@ -9,5 +9,24 @@
 .tagsLayout {
   display: flex;
   gap: 10px;
+  margin: 20px 100px 0px 100px;
+}
+
+.headerLayout {
+  display: flex;
+  justify-content: space-between;
   margin: 0px 100px;
+}
+
+.titleLocation {
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
