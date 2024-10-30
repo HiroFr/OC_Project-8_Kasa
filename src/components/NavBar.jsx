@@ -4,10 +4,12 @@ import {Link, useLocation} from 'react-router-dom';
 function NavBar() {
   const location = useLocation();
 
-  return ( 
+  return (
     <>
       <div className='navBar'>
-        <img src={logoKasa} alt="Logo" />
+        <Link to="/">
+          <img src={logoKasa} alt="Logo" />
+        </Link>
         <ul className='listNavBar'>
           <li className={location.pathname === '/' ? "selectedLink" : ''}>
             <Link to="/">Acceuil</Link>
@@ -18,7 +20,7 @@ function NavBar() {
         </ul>
       </div>
     </>
-   );
+  );
 }
 
 export default NavBar;
