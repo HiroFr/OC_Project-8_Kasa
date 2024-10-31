@@ -2,9 +2,7 @@ import NavBar from '../NavBar';
 import Banner from '../Banner';
 import CardContainer from '../CardContainer';
 import Footer from '../Footer';
-
 import imageSource1 from '../../assets/pictures/ImageSource1.png';
-/* import BackgroundOverlay from '../assets/pictures/BackgroundOverlay.png'; */
 
 function Home() {
   return (

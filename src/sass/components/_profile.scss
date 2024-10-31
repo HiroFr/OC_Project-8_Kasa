@@ -1,10 +1,15 @@
 .profileDivPicture {
   display: flex;
+  justify-content: end;
+  align-items: center;
 
   h3 {
     font-size: 18px;
     font-weight: 500;
     color: #FF6060;
+    width: 50%;
+    text-align: end;
+    margin-right: 10px;
   }
 
   img {

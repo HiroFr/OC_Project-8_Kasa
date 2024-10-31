@@ -1,11 +1,40 @@
 .carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 415px;
+  position: relative;
   margin: 0px 100px;
-  margin-bottom: 30px;
 
   .carouselPicture {
     height: 415px;
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
+
+    position: absolute;
+    z-index: -1;
+    object-position: center;
+  }
+
+  .arrowBack {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .arrowNext {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .carouselNbr {
+    position: absolute;
+    bottom: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
   }
 }
