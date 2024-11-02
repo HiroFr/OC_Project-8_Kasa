@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 43px;
-  margin: 45px 100px;
+  margin: 45px 0px;
 
   h1 {
     position: absolute;
@@ -30,5 +30,29 @@
     border-radius: 25px;
     position: absolute;
     opacity: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .bannerDivPicture {
+    margin: 27px 0px 22px 0px;
+  
+    h1 {
+      text-shadow: none;
+      font-size: 24px;
+      width: 70%;
+      left: 0;
+      margin-left: 16px;
+    }
+  
+    .bannerPicture {
+      height: 111px;
+      border-radius: 10px;
+    }
+  
+    .bannerOverlayPicture {
+      height: 111px;
+      border-radius: 10px;
+    }
   }
 }

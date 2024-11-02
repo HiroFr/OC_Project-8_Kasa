@@ -21,13 +21,35 @@
   }
 }
 
-.collapseContain {
-  background-color: #F6F6F673;
-
-   p {
+  .collapseContain {
+    background-color: #F6F6F673;
     font-size: 18px;
-   }
-}
+    padding: 16px 20px 20px 20px;
+  }
 }
 
 
+@media (max-width: 375px) {
+  .collapseContainer {
+    margin-bottom: 0px;
+
+    .collapse {
+      height: 30px;
+      align-items: center;
+
+      h2 {
+        font-size: 13px;
+      }
+
+      img {
+        width: 32px;
+        height: auto;
+      }
+    }
+
+    .collapseContain {
+      font-size: 12px;
+      padding: 13px 20px 19px 20px;
+    }
+  }
+}

@@ -10,3 +10,10 @@
   align-items: center;
   padding: 14px;
 }
+
+@media (max-width: 375px) {
+  .tags {
+    font-size: 10px;
+    height: 18px;
+  }
+}

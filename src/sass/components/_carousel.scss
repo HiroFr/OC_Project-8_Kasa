@@ -5,7 +5,6 @@
   justify-content: center;
   min-height: 415px;
   position: relative;
-  margin: 0px 100px;
 
   .carouselPicture {
     height: 415px;
@@ -37,4 +36,28 @@
     font-size: 18px;
     font-weight: 500;
   }
+}
+
+@media (max-width: 375px) {
+  .carousel {
+    margin: 27px 0px 0px 0px;
+    min-height: 256px;
+
+    .carouselPicture {
+      height: 255px;
+      width: 335px;
+    }
+
+    .arrowBack {
+      height: 24px;
+    }
+  
+    .arrowNext {
+      height: 24px;
+    }
+
+    .carouselNbr {
+      display: none;
+    }
+  } 
 }

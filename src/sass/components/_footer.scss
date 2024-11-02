@@ -7,13 +7,21 @@
   align-items: center;
   gap: 28px;
   padding-bottom: 29px;
-  position: static;
-  bottom: 0;
+  position: absolute;
+  left: 0;
   width: 100%;
 
   &Title {
     color: #FFF;
     font-size: 24px;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 375px) {
+  .footerTitle {
+    font-size: 12px;
+    text-align: center;
+    width: 30%;
   }
 }

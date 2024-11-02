@@ -16,7 +16,14 @@ html, body {
   font-family: typography.$font_family;
 }
 
+@media (max-width: 375px) {
+  body {
+    margin: 0px 20px !important;
+  }
+}
+
 body {
+  margin: 0px 100px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

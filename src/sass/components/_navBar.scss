@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  margin: 45px 100px;
+  margin: 45px 0px;
 
   .listNavBar {
     display: flex;
@@ -16,6 +16,25 @@
 
     .selectedLink {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navBar {
+    margin: 45px 0px 0px 0px;
+
+    img {
+      height: 46px;
+    }
+
+    .listNavBar {
+      gap: 26px;
+
+      li {
+        font-size: 12px;
+        font-weight: 500;
+      }
     }
   }
 }
