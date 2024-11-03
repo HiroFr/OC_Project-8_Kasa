@@ -27,7 +27,7 @@ function HousingLayout() {
       <Carousel />
       <div className="detailsHeader">
         <div className="detailsHeader__main">
-          <div className="detailsHeader__titleLocation">
+          <div className="detailsHeader__main__titleLocation">
             <h1>{cardData.title}</h1>
             <h2>{cardData.location}</h2>
           </div>
@@ -40,7 +40,7 @@ function HousingLayout() {
 
         <div className="detailsHeader__profileRating">
           <Profile hostname={cardData.host.name} hostpicture={cardData.host.picture}/>
-          <div className="detailsHeader__rating">
+          <div className="detailsHeader__profileRating__rating">
             {stars.map((_, index) => (
               <StarIcons key={index} colorIcons={cardData.rating > index ? colors.red : colors.grey} />
             ))}

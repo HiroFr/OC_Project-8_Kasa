@@ -4,10 +4,10 @@ import BackgroundOverlay from '../assets/pictures/BackgroundOverlay.png';
 function Banner({ title, picture }) {
   return ( 
     <>
-      <div className="bannerDivPicture">
-        <h1>{title}</h1>
-        <img src={picture} alt="image_source" className='bannerPicture' />
-        <img src={BackgroundOverlay} alt="Superposition" className='bannerOverlayPicture' />
+      <div className="bannerContent">
+        <h1 className='bannerContent__title'>{title}</h1>
+        <img src={picture} alt="image_source" className='bannerContent__picture' />
+        <img src={BackgroundOverlay} alt="Superposition" className='bannerContent__overlayPicture' />
       </div>
     </>
    );

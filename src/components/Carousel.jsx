@@ -27,12 +27,12 @@ function Carousel() {
       <div className="carousel">
         {length > 1 && (
           <>
-            <img src={arrowBack} onClick={handlePrevious} className="arrowBack"/>
-            <img src={arrowNext} onClick={handleNext} className="arrowNext"/>
+            <img src={arrowBack} onClick={handlePrevious} className="carousel__arrowBack"/>
+            <img src={arrowNext} onClick={handleNext} className="carousel__arrowNext"/>
           </>
         )}
-        <img src={data.pictures[index]} alt="pictures" className="carouselPicture"/>
-        <p className="carouselNbr">{index + 1}/{length}</p>
+        <img src={data.pictures[index]} alt="pictures" className="carousel__picture"/>
+        <p className="carousel__nbr">{index + 1}/{length}</p>
       </div>
     </>
    );

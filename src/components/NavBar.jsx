@@ -8,9 +8,9 @@ function NavBar() {
     <>
       <div className='navBar'>
         <Link to="/">
-          <img src={logoKasa} alt="Logo" />
+          <img className="navBar__logo" src={logoKasa} alt="Logo" />
         </Link>
-        <ul className='listNavBar'>
+        <ul className='navBar__menu'>
           <li className={location.pathname === '/' ? "selectedLink" : ''}>
             <Link to="/">Acceuil</Link>
           </li>

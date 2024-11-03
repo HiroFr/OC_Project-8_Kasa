@@ -1,9 +1,9 @@
-.profileDivPicture {
+.profileContent {
   display: flex;
   justify-content: end;
   align-items: center;
 
-  h3 {
+  &__name {
     font-size: 18px;
     font-weight: 500;
     color: #FF6060;
@@ -12,21 +12,22 @@
     margin-right: 10px;
   }
 
-  img {
+  &__picture {
     border-radius: 100%;
     width: 80px;
     height: 80px;
   }
 }
 
+/* mobile */
 @media (max-width: 375px) {
-  .profileDivPicture {
+  .profileContent {
   
-    h3 {
+    &__name {
       font-size: 12px;
     }
   
-    img {
+    &__picture {
       width: 32px;
       height: 32px;
     }

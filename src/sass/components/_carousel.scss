@@ -6,7 +6,19 @@
   min-height: 415px;
   position: relative;
 
-  .carouselPicture {
+  &__arrowBack {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  &__arrowNext {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  &__picture {
     height: 415px;
     width: 100%;
     object-fit: cover;
@@ -17,19 +29,7 @@
     object-position: center;
   }
 
-  .arrowBack {
-    position: absolute;
-    left: 10px;
-    cursor: pointer;
-  }
-
-  .arrowNext {
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-  }
-
-  .carouselNbr {
+  &__nbr {
     position: absolute;
     bottom: 10px;
     color: #FFF;
@@ -38,25 +38,26 @@
   }
 }
 
+/* mobile */
 @media (max-width: 375px) {
   .carousel {
     margin: 27px 0px 0px 0px;
     min-height: 256px;
 
-    .carouselPicture {
+    &__picture {
       height: 255px;
       width: 335px;
     }
 
-    .arrowBack {
+    &__arrowBack {
       height: 24px;
     }
   
-    .arrowNext {
+    &__arrowNext {
       height: 24px;
     }
 
-    .carouselNbr {
+    &__nbr {
       display: none;
     }
   } 

@@ -11,15 +11,16 @@
   left: 0;
   width: 100%;
 
-  &Title {
+  &__title {
     color: #FFF;
     font-size: 24px;
     font-weight: 500;
   }
 }
 
+/* mobile */
 @media (max-width: 375px) {
-  .footerTitle {
+  .footer__title {
     font-size: 12px;
     text-align: center;
     width: 30%;

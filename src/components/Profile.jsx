@@ -2,9 +2,9 @@
 function Profile({ hostname, hostpicture }) {
   return ( 
     <>
-      <div className="profileDivPicture">
-        <h3>{hostname}</h3>
-        <img src={hostpicture} alt={hostname} className="profilePicture"/>
+      <div className="profileContent">
+        <h3 className="profileContent__name">{hostname}</h3>
+        <img className="profileContent__picture" src={hostpicture} alt={hostname} />
       </div>
     </>
    );

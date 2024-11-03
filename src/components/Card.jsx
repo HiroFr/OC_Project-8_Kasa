@@ -2,8 +2,8 @@
 function Card({ data }) {
   return ( 
     <div className="cardBox">
-      <img src={data.cover} alt={data.title} />
-      <h2>{data.title}</h2>
+      <img className="cardBox__picture" src={data.cover} alt={data.title} />
+      <h2 className="cardBox__title">{data.title}</h2>
     </div>
    );
 }

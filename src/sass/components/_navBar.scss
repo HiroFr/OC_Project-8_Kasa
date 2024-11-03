@@ -5,7 +5,7 @@
   margin-bottom: 50px;
   margin: 45px 0px;
 
-  .listNavBar {
+  &__menu {
     display: flex;
     gap: 57px;
 
@@ -20,15 +20,16 @@
   }
 }
 
+/* mobile */
 @media (max-width: 375px) {
   .navBar {
     margin: 45px 0px 0px 0px;
 
-    img {
+    &__logo {
       height: 46px;
     }
 
-    .listNavBar {
+    &__menu {
       gap: 26px;
 
       li {

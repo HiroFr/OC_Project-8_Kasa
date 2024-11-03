@@ -6,12 +6,12 @@ function Collapse({ title, content }) {
   return ( 
     <>
     <div className="collapseContainer">
-      <div className="collapse">
-        <h2>{title}</h2>
-        <img src={IconChevronClose} alt="iconChevron" />
+      <div className="collapseContainer__collapse">
+        <h2 className="collapseContainer__collapse__title">{title}</h2>
+        <img className="collapseContainer__collapse__picture" src={IconChevronClose} alt="iconChevron" />
       </div>
-      <div className="collapseContain">
-        <span>{content}</span>
+      <div className="collapseContainer__collapseContent">
+        <span className="collapseContent__collapseContent__text">{content}</span>
       </div>
     </div>
     </>
