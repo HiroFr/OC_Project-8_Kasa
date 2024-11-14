@@ -1,18 +1,19 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixins;
+
 .detailsHeader {
-  display: flex;
-  justify-content: space-between;
   margin: 30px 0px 24px 0px;
+  @include mixins.flex-between;
 
   &__main {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
+    @include mixins.flex-column;
 
     &__titleLocation {
       h1 {
         font-size: 36px;
         font-weight: 500;
-        color: #FF6060;
+        color: var.$primary-color;
       }
   
       h2 {
@@ -23,26 +24,25 @@
   }
 
   &__tags {
-    display: flex;
     gap: 10px;
+    display: flex;
   }
 
   &__profileRating {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
+    @include mixins.flex-column;
     
     &__rating {
+      gap: 10px;
       display: flex;
       justify-content: end;
-      gap: 10px;
     }
   }
 }
 
 .collapseContent {
-  display: flex;
   gap: 76px;
+  display: flex;
   margin-top: 24px;
   margin-bottom: 50px;
 }
@@ -59,8 +59,7 @@
     flex-direction: column;
   
     &__main {
-      display: flex;
-      flex-direction: column;
+      @include mixins.flex-column;
       gap: 20px;
   
       &__titleLocation {
@@ -80,8 +79,8 @@
     }
   
     &__profileRating {
-      flex-direction: row-reverse;
       align-items: center;
+      flex-direction: row-reverse;
       justify-content: space-between;
       
       &__rating {

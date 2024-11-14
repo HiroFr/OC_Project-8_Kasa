@@ -1,28 +1,30 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixins;
+
 .footer {
-  background-color: #000;
-  height: 209px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  gap: 28px;
-  padding-bottom: 29px;
-  position: absolute;
   left: 0;
+  gap: 28px;
   width: 100%;
+  height: 209px;
+  position: absolute;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 29px;
+  @include mixins.flex-column;
+  background-color: var.$black-color;
 
   &__title {
-    color: #FFF;
     font-size: 24px;
     font-weight: 500;
+    color: var.$white-color;
   }
 }
 
 /* mobile */
 @media (max-width: 375px) {
   .footer__title {
+    width: 30%;
     font-size: 12px;
     text-align: center;
-    width: 30%;
   }
 }

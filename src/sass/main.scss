@@ -1,5 +1,8 @@
 // Import des différentes parties de la structure
 
+@use './abstracts/mixins';
+@use './abstracts/variables';
+
 @use './base/_reset';
 @use './base/_typography';
 
@@ -12,6 +15,5 @@
 @use './components/_profile';
 @use './components/_footer';
 
-@use './pages/_home';
 @use './pages/_notFound';
 @use './pages/_housingLayout';

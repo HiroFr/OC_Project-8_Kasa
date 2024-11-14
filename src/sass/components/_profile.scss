@@ -1,21 +1,23 @@
+@use '../abstracts/variables' as var;
+
 .profileContent {
   display: flex;
-  justify-content: end;
   align-items: center;
+  justify-content: end;
 
   &__name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #FF6060;
     width: 50%;
+    font-size: 18px;
     text-align: end;
+    font-weight: 500;
     margin-right: 10px;
+    color: var.$primary-color;
   }
 
   &__picture {
-    border-radius: 100%;
     width: 80px;
     height: 80px;
+    border-radius: 100%;
   }
 }
 

@@ -1,13 +1,15 @@
+@use '../abstracts/mixins' as mixins;
+
 .navBar {
-  display: flex;
-  justify-content: space-between;
+  margin: 45px 0px;
   align-items: center;
   margin-bottom: 50px;
-  margin: 45px 0px;
+  @include mixins.flex-between;
+
 
   &__menu {
-    display: flex;
     gap: 57px;
+    display: flex;
 
     li {
       font-size: 24px;

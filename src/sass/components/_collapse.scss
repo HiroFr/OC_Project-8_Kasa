@@ -1,15 +1,17 @@
+@use '../abstracts/variables' as var;
+
 .collapseContainer {
   margin-bottom: 45px;
   width: 100%;
   
   &__collapse {
-    background-color: #FF6060;
+    background-color: var.$primary-color;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
 
     &__title {
-      color: #FFF;
+      color: var.$white-color;
       font-size: 24px;
       padding: 10px 0px 10px 10px;
     }
@@ -22,7 +24,7 @@
   }
 
   &__collapseContent {
-    background-color: #F6F6F673;
+    background-color: var.$collapse-color;
     font-size: 18px;
     padding: 16px 20px 20px 20px;
   }

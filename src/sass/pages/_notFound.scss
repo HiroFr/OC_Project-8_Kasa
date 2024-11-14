@@ -1,11 +1,13 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixins;
+
 .notFoundContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   gap: 139px;
   margin: 139px 0;
-  color: #FF6060;
+  align-items: center;
+  color: var.$primary-color;
+  @include mixins.flex-column;
+  justify-content: space-around;
 
   &__title {
     font-size: 12em;
@@ -18,7 +20,7 @@
   &__backToHome {
     font-size: 18px;
     font-weight: 500;
-    color: #000;
+    color: var.$black-color;
     text-decoration: underline;
   }
 }
@@ -33,8 +35,8 @@
     }
 
     &__subtitle {
-      font-size: 18px;
       width: 80%;
+      font-size: 18px;
       text-align: center;
     }
 

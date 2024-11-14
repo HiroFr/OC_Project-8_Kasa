@@ -1,18 +1,19 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixins;
+
 .bannerContent {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 43px;
   margin: 45px 0px;
+  position: relative;
+  margin-bottom: 43px;
+  @include mixins.flex-center;
 
   &__title {
-    position: absolute;
     z-index: 1;
-    color: #FFF;
-    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 48px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: absolute;
+    color: var.$white-color;
+    text-shadow: 4px 4px var.$shadow-color;
+    text-shadow: -1px 0 var.$black-color, 0 1px var.$black-color, 1px 0 var.$black-color, 0 -1px var.$black-color;
   }
 
   &__picture {
@@ -21,15 +22,15 @@
     object-fit: cover;
     border-radius: 25px;
     filter: brightness(60%);
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0px 4px 4px 0px var.$shadow-color;
   }
 
   &__overlayPicture {
     width: 100%;
-    height: 223px;
-    border-radius: 25px;
-    position: absolute;
     opacity: 30%;
+    height: 223px;
+    position: absolute;
+    border-radius: 25px;
   }
 }
 
@@ -39,10 +40,10 @@
     margin: 27px 0px 22px 0px;
   
     &__title {
-      text-shadow: none;
-      font-size: 24px;
-      width: 70%;
       left: 0;
+      width: 70%;
+      font-size: 24px;
+      text-shadow: none;
       margin-left: 16px;
     }
   

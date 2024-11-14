@@ -1,20 +1,21 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixins;
+
 .tags {
-  background: #FF6060;
-  border-radius: 10px;
   height: 25px;
-  color: #FFF;
+  padding: 14px;
   font-size: 14px;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px;
+  border-radius: 10px;
+  color: var.$white-color;
+  @include mixins.flex-center;
+  background: var.$primary-color;
 }
 
 /* mobile */
 @media (max-width: 375px) {
   .tags {
-    font-size: 10px;
     height: 18px;
+    font-size: 10px;
   }
 }

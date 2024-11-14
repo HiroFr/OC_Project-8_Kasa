@@ -13,6 +13,10 @@ function HousingLayout() {
   const { id } = useParams();
   const cardData = CardListJson.find(item => item.id === id);
 
+  if (!cardData) {
+    throw new Error;
+  }
+
   const colors = {
     red: "#FF6060",
     grey: "#E3E3E3"
