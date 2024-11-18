@@ -15,8 +15,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "housing/:id",
-    element: <HousingLayout/>,
-    errorElement: <NotFound/>
+    element: <HousingLayout/>
   },
   {
     path: "*",

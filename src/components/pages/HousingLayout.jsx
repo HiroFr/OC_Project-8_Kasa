@@ -6,15 +6,23 @@ import Carousel from '../Carousel';
 import Profile from '../Profile';
 import StarIcons from '../icons/Stars';
 import CardListJson from '../../data.json';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 function HousingLayout() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const cardData = CardListJson.find(item => item.id === id);
 
+  useEffect(() => {
+    if (!cardData) {
+      navigate('/NotFound');
+    }
+  }, [cardData, navigate]);
+
   if (!cardData) {
-    throw new Error;
+    return null;
   }
 
   const colors = {
