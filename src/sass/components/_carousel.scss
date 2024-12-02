@@ -39,14 +39,13 @@
 }
 
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .carousel {
     min-height: 256px;
     margin: 27px 0px 0px 0px;
 
     &__picture {
       height: 255px;
-      width: 335px;
     }
 
     &__arrowBack {

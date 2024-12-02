@@ -34,9 +34,11 @@ function About() {
     <>
       <NavBar />
       <Banner picture={imageSource2}/>
-      {aboutList.map((e, index) => (
-        <Collapse key={index} title={e.title} content={e.content}/>
-      ))}
+      <div className="collapseAbout">
+        {aboutList.map((e, index) => (
+          <Collapse key={index} title={e.title} content={e.content}/>
+        ))}        
+      </div>
       <Footer />
   </>
    );

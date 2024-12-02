@@ -35,9 +35,9 @@
 }
 
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .bannerContent {
-    margin: 27px 0px 22px 0px;
+    margin: 27px 0px 0px 0px;
   
     &__title {
       left: 0;

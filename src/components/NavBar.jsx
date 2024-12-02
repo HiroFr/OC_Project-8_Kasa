@@ -1,4 +1,4 @@
-import logoKasa from '../assets/logo_Kasa.png';
+import logoKasa from '../assets/Logo_Kasa.png';
 import {Link, useLocation} from 'react-router-dom';
 
 function NavBar() {

@@ -16,7 +16,7 @@ html, body {
   font-family: typography.$font_family;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   body {
     margin: 0px 20px !important;
   }

@@ -53,17 +53,17 @@
 }
 
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .cardContainer {
     gap: 20px;
     padding: 0px;
     border-radius: 0px;
-    margin: 0px 0px 27px 0px;
+    margin: 22px 0px 27px 0px;
     background-color: var.$white-color;
   }
   
   .cardBox {
-    width: 335px;
+    width: 280px;
     height: 255px;
 
     &__picture {

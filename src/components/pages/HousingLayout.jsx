@@ -15,6 +15,7 @@ function HousingLayout() {
   const { id } = useParams();
   const cardData = CardListJson.find(item => item.id === id);
 
+  // Si pas de data
   useEffect(() => {
     if (!cardData) {
       navigate('/NotFound');
@@ -30,7 +31,7 @@ function HousingLayout() {
     grey: "#E3E3E3"
   }
 
-  const stars = Array(5).fill(0);
+  const stars = Array(5).fill(0); // [0, 0, 0, 0, 0]
 
 
   return ( 
@@ -55,6 +56,7 @@ function HousingLayout() {
           <div className="detailsHeader__profileRating__rating">
             {stars.map((_, index) => (
               <StarIcons key={index} colorIcons={cardData.rating > index ? colors.red : colors.grey} />
+              // Si rating est supérieur à l'index de l'étoile alors son affiche l'étoile rouge sinon gris
             ))}
           </div>        
         </div>
